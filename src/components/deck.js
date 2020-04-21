@@ -177,6 +177,39 @@ const Deck = ({
             </Mode>
           </Wrapper>
         </ThemeProvider>
+       <div
+    sx={{
+      position: 'absolute',
+      zIndex: 1,
+      left: 0,
+      bottom: 0,
+      right: 0,
+      pointerEvents: 'none',
+      variant: 'styles.Footer',
+            visibility:'hidden',
+    }}
+      >
+      <a href='#'>FOOTERLINKONI</a>
+      <a href='#'>FOOTERLINKONI</a>
+      <a href='#'>FOOTERLINKONI</a>
+      <a href='#'>FOOTERLINKONI</a>
+      <a href='#'>FOOTERLINKONI</a>
+      <a href='#'>FOOTERLINKONI</a>
+      <a href='#'>FOOTERLINKONI</a>
+      <a href='#'>FOOTERLINKONI</a>
+      <a href='#'>FOOTERLINKONI</a>
+      <a href='#'>FOOTERLINKONI</a>
+      <a href='#'>FOOTERLINKONI</a>
+      <a href='#'>FOOTERLINKONI</a>
+      <a href='#'>FOOTERLINKONI</a>
+      <a href='#'>FOOTERLINKONI</a>
+      <a href='#'>FOOTERLINKONI</a>
+      <a href='#'>FOOTERLINKONI</a>
+      <a href='#'>FOOTERLINKONI</a>
+      <a href='#'>FOOTERLINKONI</a>
+      <a href='#'>FOOTERLINKONI</a>
+      </div>
+
       </Context.Provider>
     </>
   )
