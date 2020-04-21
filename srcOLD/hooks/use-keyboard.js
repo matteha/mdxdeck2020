@@ -11,8 +11,6 @@ const keys = {
   up: 38,
   down: 40,
   space: 32,
-  k: 75,
-  j: 74,
   f: 70,
   p: 80,
   o: 79,
@@ -74,20 +72,16 @@ export const useKeyboard = () => {
           case keys.right:
           case keys.down:
           case keys.pageDown:
-          case keys.j:
-          case keys.pageDown:
           case keys.space:
             next(context)
             break
           case keys.left:
           case keys.up:
-          case keys.k:
           case keys.pageUp:
             previous(context)
             break
           case keys.esc:
-            //context.setState({ mode: modes.normal })
-            context.setState(toggleMode(modes.overview))
+            context.setState({ mode: modes.normal })
             break
         }
       }
