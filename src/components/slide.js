@@ -9,6 +9,8 @@ import { modes } from '../constants'
 
 export const Slide = ({ slide, index, preview, className }) => {
   const outer = useDeck()
+  const { length } = useDeck()
+  const index2 = index + 1
   const slideWidth = outer.theme.size.width
   const slideHeight = outer.theme.size.height
 
@@ -52,9 +54,51 @@ export const Slide = ({ slide, index, preview, className }) => {
             variant: 'styles.Slide',
           }}>
           {slide}
-        </div>
+
       </div>
+
+       <div style={{
+        //transform: `translate(-50%, -50%) scale(${scale.ratio})`,
+            //transformOrigin: 'center',
+      position: 'fixed',
+      fontFamily: 'system-ui,sans-serif',
+    background:'rgb(50,65,171)',
+      fontSize:'18px',
+      //transform: `translate(-50%, -50%) scale(${scale.ratio})`,
+      transformOrigin: 'center',
+      zIndex: 1,
+      left: 0,
+               width:'100%',
+      bottom: 0,
+      right: 0,
+      pointerEvents: 'none',
+      }}>
+      .
+      </div>
+      <div style={{
+      position: 'fixed',
+    background:'rgb(50,65,171)',
+      fontFamily: 'system-ui,sans-serif',
+      fontSize:'17px',
+      fontWeight:'600',
+      //transform: `translate(-50%, -50%) scale(${scale.ratio})`,
+      //transformOrigin: 'center',
+      color:'white',
+      zIndex: 1,
+      //left: 0,
+      bottom: 0,
+      right: 10,
+      pointerEvents: 'none',
+      }}>
+      {index2}  /  {length}
+      </div>
+
+
+        </div>
+
     </Context.Provider>
+
+
   )
 }
 

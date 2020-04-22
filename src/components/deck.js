@@ -177,8 +177,11 @@ const Deck = ({
             </Mode>
           </Wrapper>
         </ThemeProvider>
+
        <div
     sx={{
+      //ImaxHeight:'10px',
+      //maxWidth:'1px',
       position: 'absolute',
       zIndex: 1,
       left: 0,
@@ -186,7 +189,7 @@ const Deck = ({
       right: 0,
       pointerEvents: 'none',
       variant: 'styles.Footer',
-            visibility:'hidden',
+      visibility:'hidden',
     }}
       >
       <a href='#'>FOOTERLINKONI</a>
