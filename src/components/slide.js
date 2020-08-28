@@ -30,6 +30,8 @@ export const Slide = ({ slide, index, preview, className }) => {
         className={className}
         sx={{
           position: 'relative',
+          // when presenting change this to wide!
+          background:'black',
           height: '100%',
           width: '100%',
           pb: preview ? `${100 * (slideHeight / slideWidth)}%` : null,

@@ -4,13 +4,14 @@ export default {
     height: 768
   },
   transition: [
-    { opacity: 0 },
     { opacity: 1 },
-    { opacity: 0 },
+    { opacity: 1 },
+    { opacity: 1 },
   ],
   colors: {
     text: '#000',
-    background: '#fff',
+    //background: '#fff',
+    background: 'white',
     primary: '#07c',
     secondary: '#80c',
     muted: '#f6f6ff',
@@ -50,6 +51,7 @@ export default {
     },
     h1: {
       variant: 'text.heading',
+      fontSize:'1.5em',
     },
     h2: {
       variant: 'text.heading',
@@ -110,6 +112,12 @@ export default {
       paddingBottom: '.25em',
       borderBottom: '1px solid',
       verticalAlign: 'top',
+    },
+    p: {
+      textAlign:'left',
+    },
+    ul: {
+      fontSize:'28px',
     },
     blockquote: {
       fontWeight: 'bold',

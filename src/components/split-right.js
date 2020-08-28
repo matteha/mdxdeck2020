@@ -12,8 +12,13 @@ export const SplitRight = ({ children, ...props }) => {
         alignItems: 'center',
         height: '100%',
         textAlign: 'center',
+        paddingRight:'20px',
       }}>
-      <div sx={{ width: '50%' }}>{rest}</div>
+      <div sx={{
+             width: '50%',
+             paddingRight: '50px',
+             paddingLeft: '10px',
+           }}>{rest}</div>
       <div sx={{ width: '50%' }}>{first}</div>
     </div>
   )

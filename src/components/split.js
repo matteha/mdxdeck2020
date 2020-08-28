@@ -12,9 +12,15 @@ export const Split = ({ children, ...props }) => {
         alignItems: 'center',
         height: '100%',
         textAlign: 'center',
+        paddingLeft:'20px',
       }}>
       <div sx={{ width: '50%' }}>{first}</div>
-      <div sx={{ width: '50%' }}>{rest}</div>
+      <div sx={{
+             width: '50%',
+             paddingLeft: '50px',
+             paddingRight: '10px'
+           }}
+      >{rest}</div>
     </div>
   )
 }

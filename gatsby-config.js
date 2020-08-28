@@ -38,6 +38,13 @@ const config = (opts = {}) => ({
         path: 'decks',
       },
     },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'src',
+        path: 'src',
+      },
+    },
     HAS_ASSETS && {
       resolve: 'gatsby-source-filesystem',
       options: {

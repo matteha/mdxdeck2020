@@ -20,6 +20,7 @@ const keys = {
   esc: 27,
   pageUp: 33,
   pageDown: 34,
+  f6: 117,
 }
 
 const toggleFullscreen = state =>
@@ -86,6 +87,7 @@ export const useKeyboard = () => {
             previous(context)
             break
           case keys.esc:
+          case keys.f6:
             //context.setState({ mode: modes.normal })
             context.setState(toggleMode(modes.overview))
             break

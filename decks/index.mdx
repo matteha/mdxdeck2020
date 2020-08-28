@@ -1,1 +1,78 @@
-Hello World!
+import { Box } from 'theme-ui'
+import { Split } from '../src/components/split'
+import { SplitRight } from '../src/components/split-right'
+
+---
+
+# Default layout (not specified)
+
+Item 1
+
+Item 2
+
+Item 3
+
+---
+
+# Split layout
+
+<Split>
+
+import i from './N_patents_US.png';
+
+<img src={i} />
+
+* Item describing graph here
+
+* Item 2 describing graph
+
+* Item 3 describing graph with more text here so it goes to next sentence
+
+</Split>
+
+First item displayed to left, all remaining to the right
+
+---
+
+# Split Right layout
+
+<SplitRight>
+
+import test from './test.png';
+
+<img src={test} />
+
+* Item describing graph here
+
+* Item 2 describing graph
+
+* Item 3 describing graph with more text here so it goes to next sentence
+
+</SplitRight>
+
+First item displayed to left, all remaining to the right
+
+---
+
+# Split Layout 2 images
+
+<Split>
+
+<div>
+<img src={i} style={{maxHeight:"280px"}} />
+<img src={i} style={{maxHeight:"280px"}} />
+</div>
+
+* Item describing graph here
+
+* Item 2 describing graph
+
+* Item 3 describing graph with more text here so it goes to next sentence
+
+</Split>
+
+First item displayed to left, all remaining to the right
+
+---
+
+
